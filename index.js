@@ -33,9 +33,9 @@ cloudinaryConnection();
 app.use(express.json());
 app.use(CookieParser());
 app.use(cors({
-  origin: 'http://localhost:3000', // Frontend URL
+  origin: ["http://localhost:3000", "https://shudhh-apk-frontend-lwzh.vercel.app", "https://shudhh-apk-frontend-git-e8981e-shubham-kumars-projects-c7fe827c.vercel.app", "https://shudhh-apk-frontend-lwzh-pifve6vo4.vercel.app"], // Frontend URL
   credentials: true, // Enable for cookies
-}));  
+}));
 app.use(fileUpload({
   useTempFiles: true,
   tempFileDir: '/tmp'
